@@ -2,7 +2,7 @@ body:
   - type: dropdown
     attributes:
       label: Type
-      description: Type of RFC
+      description: What kind of change is being proposed?
       options:
         - Feature
         - Enhancement
@@ -14,15 +14,11 @@ body:
     attributes:
         label: Author(s)
         description: Your name(s)
-    validations:
-        required: false
 
   - type: input
     id: components
     attributes:
         label: Related components (if any)
-    validations:
-        required: false
 
   - type: input
     id: tasks
@@ -40,15 +36,14 @@ body:
         label: Summary
         description: One paragraph explanation of the change.
     validations:
-      required: true
+        required: true
 
   - type: textarea
     attributes:
         label: Motivation and drawbacks
         description: Why are we doing this? What use cases does it support? What is the expected outcome?
-        value: _Why are we doing this? What use cases does it support? What is the expected outcome?_
     validations:
-      required: true
+        required: true
 
   - type: textarea
     id: design
@@ -56,7 +51,7 @@ body:
         label: Detailed design
         description: Explain the design in enough detail so that somebody less familiar with the code base can understand. This should get into specifics and corner-cases, and include examples of how the feature is used.
     validations:
-      required: true
+        required: true
 
   - type: textarea
     attributes:

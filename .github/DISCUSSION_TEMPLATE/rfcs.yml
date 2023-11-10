@@ -1,11 +1,10 @@
-name: Feature Request
-description: Provide a report for a new feature or enhancement
 labels: [feature, enhancement]
 body:
   - type: input
     id: authors
     attributes:
       label: Author(s)
+      value: '## Authors'
       description: Your name(s)
       placeholder: "Enter your name"
     validations:

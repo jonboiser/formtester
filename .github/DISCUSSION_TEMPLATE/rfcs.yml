@@ -42,6 +42,7 @@ body:
     attributes:
         label: Motivation and drawbacks
         description: Why are we doing this? What use cases does it support? What is the expected outcome?
+        value: _Why are we doing this? What use cases does it support? What is the expected outcome?_
     validations:
       required: true
 

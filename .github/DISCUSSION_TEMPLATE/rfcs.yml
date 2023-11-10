@@ -1,0 +1,78 @@
+name: Feature Request
+description: Provide a report for a new feature or enhancement
+labels: [feature, enhancement]
+body:
+  - type: input
+    id: authors
+    attributes:
+      label: Author(s)
+      description: Your name(s)
+      placeholder: "Enter your name"
+    validations:
+      required: true
+  - type: input
+    id: components
+    attributes:
+      label: Related components
+      description: If any
+      placeholder: "Enter related components"
+    validations:
+      required: false
+  - type: input
+    id: tasks
+    attributes:
+      label: Related epics/tasks
+      description: If any
+      placeholder: "Enter related tasks"
+    validations:
+      required: false
+  - type: input
+    id: references
+    attributes:
+      label: Reference links
+      description: If any
+      placeholder: "Enter reference links"
+    validations:
+      required: false
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One paragraph explanation of the change.
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation and drawbacks
+      description: Why are we doing this? What use cases does it support? What is the expected outcome?
+    validations:
+      required: true
+  - type: textarea
+    id: design
+    attributes:
+      label: Detailed design
+      description: Explain the design in enough detail so that somebody less familiar with the code base can understand. This should get into specifics and corner-cases, and include examples of how the feature is used.
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks
+      description: What end-to-end and load testing do we need to do to find out if this is a problem? Is this a breaking change? Is it backwards compatible? Does it need a deprecation, migration, EOL plan?
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: Why is this design the best in the space of possible designs? What other designs have been considered and what is the rationale for not choosing them? What is the impact of not doing this?
+    validations:
+      required: false
+  - type: textarea
+    id: unresolved
+    attributes:
+      label: Unresolved questions
+      description: What parts of the design do you expect to resolve through the RFC process before this gets merged? What parts of the design do you expect to resolve through the implementation of this feature before stabilization? What related issues do you consider out of scope for this RFC that could be addressed in the future independently of the solution that comes out of this RFC?
+    validations:
+      required: false
